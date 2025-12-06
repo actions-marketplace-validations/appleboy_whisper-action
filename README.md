@@ -17,6 +17,9 @@ See [action.yml](./action.yml) for more detailed information.
 | print_progress   | print progress.                                              | true    |
 | print_segment    | print segment.                                               |         |
 | youtube_url      | youtube url                                                  |         |
+| translate        | translate from source language to english.                   | false   |
+| cut_silences     | cut silences.                                                | false   |
+| prompt           | initial prompt text.                                         |         |
 
 ## Usage
 
@@ -32,7 +35,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: speech to text
-      uses: appleboy/whisper-action@v0.0.1
+      uses: appleboy/whisper-action@v0.1.1
       with:
         model: small
         youtube_url: https://www.youtube.com/watch?v=pTCxXZh6VyE
