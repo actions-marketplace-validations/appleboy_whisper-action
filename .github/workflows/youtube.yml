@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: speech to text
         uses: ./
@@ -20,7 +20,7 @@ jobs:
           debug: true
 
       - name: git push changes
-        uses: appleboy/git-push-action@v0.0.3
+        uses: appleboy/git-push-action@v1.2.0
         with:
           branch: main
           commit: true
@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: speech to text
         uses: ./
@@ -47,7 +47,7 @@ jobs:
           debug: true
 
       - name: git push changes
-        uses: appleboy/git-push-action@v0.0.3
+        uses: appleboy/git-push-action@v1.2.0
         with:
           branch: main
           commit: true
@@ -61,7 +61,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: speech to text
         uses: ./
@@ -75,7 +75,7 @@ jobs:
           debug: true
 
       - name: git push changes
-        uses: appleboy/git-push-action@v0.0.3
+        uses: appleboy/git-push-action@v1.2.0
         with:
           branch: main
           commit: true
